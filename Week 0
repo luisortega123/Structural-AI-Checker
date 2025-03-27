@@ -1,0 +1,4 @@
+largo = 5.2 #metros
+costo_por_metro = 15000 #pesos
+total = largo * costo_de_metro
+print = (f"costo de la viga: ${total:,.2f}")
