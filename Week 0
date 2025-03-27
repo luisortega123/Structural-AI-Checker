@@ -3,3 +3,12 @@ costo_materriales =  float(input(Costo de materiales: $"))  # defimos que es
 iva = costo_materiales * 0.21
 print(f"Total con iva: ${costo_materiales + iva:,.2f}") # lo que queremos que no des de
 
+# precio por metro cuadrado
+while True:
+    precio = float(input("Precio por metro cuadrado? "))
+    metros = float(input("Metros cuadrados necesarios? "))
+    if precio >= 0 and metros >= 0:
+        break
+    print("¡Error! Los valores no pueden ser negativos.")
+
+
