@@ -1,4 +1,4 @@
-# extension arquitectos: calcular costo de materiales + IVA
+Extension Architects: Calculate Material Cost + VAT
 costo_materriales =  float(input(Costo de materiales: $"))  # defimos que es
 iva = costo_materiales * 0.21
 print(f"Total con iva: ${costo_materiales + iva:,.2f}") # lo que queremos que no des de
