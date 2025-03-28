@@ -1,0 +1,9 @@
+ # Calculate insurance cost based on project risk
+riesgo = input("Nivel de riesgo (alto/medio/bajo)"). lower()
+
+if riesgo == "alto":
+    print("Costo seguo: $5000")
+elif riesgo == "nedio":
+    print("Costo seguro: $3000")
+else:
+    print("Costo de seguro: $1500")
