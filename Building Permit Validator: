@@ -1,0 +1,14 @@
+# Building Permit Validator
+# This program checks whether a construction project requires a special permit.
+
+# Ask the user for the type of construction and convert it to lowercase
+construction_type = input("Type of construction (residential/commercial): ").lower()
+
+# Ask the user for the area in square meters and convert it to a float
+square_meters = float(input("Square meters? "))
+
+# Check if the construction area is 500 square meters or more
+if square_meters >= 500:
+    print("Requires special permit")  # If true, print that a special permit is required
+else:
+    print("Does not require a special permit")  # If false, print that no special permit is needed
