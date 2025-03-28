@@ -1,0 +1,8 @@
+# Ask the user to enter the student's grade 
+student_grade = int(input("Insert student's grade: "))  # Get the student's grade and convert it to an integer
+
+# Check if the student's grade is 60 or higher
+if student_grade >= 60:
+    print("Aprobado")  # If the grade is 60 or higher, print "Aprobado" (Approved)
+else:
+    print("Reprobado")  # If the grade is lower than 60, print "Reprobado" (Failed)
