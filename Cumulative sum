@@ -1,0 +1,25 @@
+# Cumulative sum
+def main():
+    number = get_number()
+    cumulative_sum(number)
+
+# Function to get a valid number
+def get_number():
+    while True:
+        try:
+            n = int(input("Which number do you want to sum? (Must be greater than 0): "))
+            if n > 0:
+                return n
+            else:
+                print("⚠️ The number must be greater than 0.")
+        except ValueError:
+            print("⚠️ Please enter a valid integer.")
+
+# Function to calculate and print the cumulative sum
+def cumulative_sum(number):
+    total = 0
+    for i in range(1, number + 1):
+        total += i  # Accumulate the sum
+        print(total, end=", " if i < number else "\n")
+
+main()
