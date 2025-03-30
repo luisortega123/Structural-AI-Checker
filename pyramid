@@ -1,0 +1,25 @@
+# Draw a pyramid
+# 1. Define a function that takes an integer and draws a pyramid of asterisks with the given height.
+
+def main():
+    height = get_height()
+    draw_pyramid(height)
+
+# 2. The function must validate that the height is between 1 and 10.
+def get_height():
+    while True:
+        try:
+            h = int(input("Pyramid height (between 1 and 10): "))
+            if 1 <= h <= 10:
+                return h
+            else:
+                print("⚠️ The height must be between 1 and 10.")
+        except ValueError:
+            print("⚠️ Please enter a valid integer.")
+
+# 3. The function must print the pyramid of asterisks to the console.
+def draw_pyramid(height):
+    for i in range(1, height + 1):
+        print(" " * (height - i) + "*" * (2 * i - 1))  # Centered pyramid
+
+main()
