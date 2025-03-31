@@ -1,0 +1,20 @@
+# Even or Odd
+# 1. Write a program that asks the user for an integer and determines if it is even or odd.
+
+def main(): 
+    x = get_int()
+    if x % 2 == 0:  # Check if the number is even
+        print("The number is even") 
+    else:
+        print("The number is odd")
+
+# 2. Write a program that asks the user for an integer and determines if it is positive, negative, or zero.
+
+def get_int():
+    while True:  # Here, an infinite loop is used so the program keeps asking for a number until an integer is entered
+        try:  # A try-except block is used to handle the exception if the user enters a non-integer value
+            return int(input("Enter an integer: "))
+        except ValueError:
+            print("Please enter an integer")
+
+main()
