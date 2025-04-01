@@ -1,0 +1,17 @@
+# Write a program that asks the user for a positive number and counts backward from that number to 1.
+def main():
+    while True:                                  # infinite loop
+        try:                               # we try to convert the input to an integer
+            numero = int(input("Enter a positive integer: "))     # we request a positive integer from the user
+            if numero > 0:                         # we verify if the number is positive
+                break
+        except ValueError:
+            print("Please enter a positive integer.")
+# up to here we define that the number is a positive integer and if it is not, it is requested again
+
+# we have to define the function that counts backwards from the entered number to 1
+    for i in range(numero, 0, -1): # loop that counts backwards from the entered number to 1
+        print(i) # prints the current number in each iteration
+
+
+main()
